@@ -1,0 +1,27 @@
+{
+  "name": "storybook-react-template",
+  "version": "1.0.0",
+  "description": "A design system template with React and Storybook",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "start-storybook -p 8080"
+  },
+  "dependencies": {
+    "@babel/core": "7.4.5",
+    "@storybook/react": "latest",
+    "babel-loader": "8.0.6",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@storybook/preset-scss": "^1.0.3",
+    "@types/storybook__react": "4.0.2",
+    "css-loader": "5.2.7",
+    "nodemon": "1.18.4",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.54.2",
+    "sass-loader": "10.1.1",
+    "style-loader": "2.0.0"
+  },
+  "keywords": []
+}
