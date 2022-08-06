@@ -1,0 +1,244 @@
+@use "../../styles/colors" as colors;
+
+.share {
+  & > .panel__head {
+    display: flex;
+    padding: 24px 20px;
+  }
+
+  .panel__head .head-group {
+    margin-left: 1rem;
+
+    p {
+      font-size: 1rem;
+      color: colors.$text-dark;
+      line-height: 24px;
+
+      & + p {
+        color: colors.$text-muted;
+        line-height: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .panel__head .toggle {
+    margin-left: auto;
+    border: 1px solid colors.$dd-border;
+    background: none;
+    align-self: center;
+    width: 44px;
+    height: 24px;
+    background: colors.$dd-border;
+    border-radius: 12px;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      width: 20px;
+      height: 20px;
+      background: colors.$white;
+      border-radius: 100%;
+    }
+
+  }
+
+  .panel__body {
+    padding: 16px 12px;
+  }
+
+  .panel__head i.os-web {
+    font-size: 2rem;
+    color: colors.$text-muted;
+  }
+
+
+  .os-text-group {
+    margin-left: 0.5rem;
+
+    & + .access-drop {
+      margin-left: auto;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: colors.$text-dark;
+
+      & + p {
+        color: colors.$text-muted;
+      }
+    }
+  }
+}
+
+
+.share > .panel__foot, .search > .panel__foot {
+  display: flex;
+  padding: 14px;
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: colors.$text-muted;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.search .field-set {
+  padding: 0;
+  border: none;
+}
+
+.search > .panel__head {
+  padding: 12px 16px;
+}
+
+.oslash-group {
+  .dropdown {
+    margin-left: auto;
+  }
+
+  .text-avatar {
+    width: 40px;
+    height: 40px;
+    background: colors.$text-muted;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+.invited-group {
+  &__wrap {
+    overflow: hidden;
+  }
+
+  max-height: 240px;
+  overflow: auto;
+}
+
+.search-bar {
+  display: flex;
+
+  &:focus-within {
+    outline: 1px solid colors.$focus-outline;
+    border-radius: 0.5rem;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    border: 1px solid colors.$border;
+    border-right: none;
+    padding: 8px 12px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+
+    &:focus {
+      border-color: transparent;
+
+      & + .btn {
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    & + .btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+
+//  move this to common scss
+.muted-text {
+  color: colors.$text-muted;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+
+.list__wrap {
+  padding: 6px 14px;
+
+  .list__heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: colors.$text;
+  }
+
+  .list__heading, .list__item {
+    padding: 6px 14px;
+  }
+
+  .list__item {
+    color: colors.$text-dark;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    cursor: pointer;
+
+    &:hover {
+      background: colors.$dd-gray;
+    }
+
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 2px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    img, span {
+      margin-right: 12px;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    span {
+      background: colors.$text-muted;
+      color: colors.$white;
+      border-radius: 6px;
+    }
+  }
+}

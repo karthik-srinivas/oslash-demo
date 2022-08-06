@@ -4,16 +4,25 @@
   "description": "A design system template with React and Storybook",
   "main": "src/index.js",
   "scripts": {
-    "start": "start-storybook -p 8080"
+    "start-storybook": "start-storybook -p 8080",
+    "start": "nodemon --watch src --exec yarn start-storybook"
   },
   "dependencies": {
     "@babel/core": "7.4.5",
     "@storybook/react": "latest",
-    "babel-loader": "8.0.6",
+    "babel-loader": "8.2.5",
+    "clsx": "^1.2.1",
+    "immer": "^9.0.15",
+    "modern-css-reset": "^1.4.0",
+    "nanoid": "^4.0.0",
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "use-immer": "^0.7.0",
+    "zustand": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.18.9",
+    "@babel/plugin-syntax-optional-chaining": "^7.8.3",
     "@storybook/preset-scss": "^1.0.3",
     "@types/storybook__react": "4.0.2",
     "css-loader": "5.2.7",

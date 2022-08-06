@@ -1,0 +1,40 @@
+@use "../../styles/colors" as colors;
+
+.select {
+  &__group {
+    padding: 0.5rem;
+    min-width: 175px;
+    border: 1px solid colors.$dd-gray;
+    border-radius: 4px;
+  }
+
+  &__item {
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: left;
+    margin-bottom: 4px;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+
+    &.error {
+      color: colors.$error;
+    }
+
+    &.active {
+      background: colors.$dd-gray;
+    }
+
+    &:hover {
+      background: colors.$dd-gray;
+    }
+  }
+}

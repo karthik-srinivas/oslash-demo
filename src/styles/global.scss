@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 @import "icons";
+@import "~modern-css-reset";
 
+html,:root{
+  font-size: 16px;
+
+}
+.sb-show-main{
+  padding: 1rem;
+}
 html, :root * {
   font-family: 'Inter', sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+
+.align-center{
+  align-items: center;
 }

@@ -1,0 +1,23 @@
+@use "../../styles/colors" as colors;
+
+.panel {
+  max-width: 512px;
+  min-width: 512px;
+  border: 1px solid colors.$dd-border;
+  border-radius: 0.5rem;
+  width: 100%;
+
+  & > &__head {
+    border-bottom: 1px solid colors.$dd-border;
+    &--gray{
+        background:  colors.$dd-gray;
+    }
+  }
+
+  & > &__foot {
+    border-top: 1px solid colors.$dd-border;
+    &--gray{
+      background:  colors.$dd-gray;
+    }
+  }
+}

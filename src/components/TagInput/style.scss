@@ -1,0 +1,45 @@
+@use "../../styles/colors" as colors;
+
+.tag-input {
+  display: inline-flex;
+  flex-flow: wrap;
+
+  .form-control {
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background: none;
+  }
+
+  .tag-group {
+    display: inline-flex;
+  }
+}
+
+.tag {
+  padding: 4px 8px;
+  background: colors.$dd-border;
+  border-radius: 4px;
+
+  margin-right: 4px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  span.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 8px;
+  }
+
+  span.close {
+    padding: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

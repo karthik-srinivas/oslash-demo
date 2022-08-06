@@ -1,3 +1,47 @@
-.btn{
-  background: lightblue;
+@use "../../styles/colors" as colors;
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  & > i.pre{
+    margin-left: 0;
+    margin-right: 0.4rem;
+  }
+  & > i{
+    margin-left: 0.72rem;
+  }
+  &.small{
+    padding: 0.563rem 0.8125rem ;
+    line-height: 1rem;
+  }
+
+  &.small > i{
+    margin-left: 0.46rem;
+  }
+
+  &--primary {
+    background: colors.$ebony;
+    color: colors.$white;
+  }
+
+  &--default {
+    background: colors.$white;
+    color: colors.$text;
+    border: 1px solid colors.$border;
+  ;
+  }
+
+  &--ghost{
+    background: none;
+    border: none;
+  }
 }
+

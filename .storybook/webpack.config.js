@@ -10,6 +10,7 @@ module.exports = ({config, mode}) => {
         test: /\.(ts|tsx)$/,
         loader: require.resolve("babel-loader"),
         options: {
+            plugins: [  require.resolve('@babel/plugin-proposal-optional-chaining'),],
             presets: [["react-app", {flow: false, typescript: true}]]
         }
     });
