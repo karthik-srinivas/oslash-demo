@@ -1,6 +1,7 @@
 ### Oslash Demo
 
 ---
+[![oslash](https://global-uploads.webflow.com/60c0cec90f5782a19af55867/61714951fd63bd6d0edac98e_Logologo.png)](https://www.oslash.com/)
 
 This demo project is built on typescript & react, 
 
